@@ -11,7 +11,7 @@ npm install --save-dev eslint-config-custrino
 
 Used by specifying `extend` in ESLint configuration file
 
-```json
+```js
 {
   "extends": "custrino",
   "rules": {
