@@ -1,136 +1,136 @@
 module.exports = {
 
   rules: {
-    // eval 使うな
+    // eval 使わないでー！
     "no-eval": "error",
-    // 文字列コードを使うな
+    // 文字列コードを使わないでー！
     "no-implied-eval": "error",
-    // with 使うな
+    // with 使わないでー！
     "no-with": "error",
-    // arguments 使うな
+    // arguments 使わないでー！
     "no-caller": "error",
-    // script url を使うな
+    // script url を使わないでー！
     "no-script-url": "error",
-    // var 使うな
+    // var 使わないでー！
     "no-var": "error",
-    // Function コンストラクタを使うな
+    // Function コンストラクタを使わないでー！
     "no-new-func": "error",
-    // グローバルオブジェクトを呼び出すな
+    // グローバルオブジェクトを呼び出すなー！
     "no-obj-calls": "error",
 
-    //条件分で代入するな eslint:recommended
+    //条件分で代入しないでー！ eslint:recommended
     "no-cond-assign": "error",
-    // ネイティブオブジェクトを拡張するな
+    // ネイティブオブジェクトを拡張しないでー！
     "no-extend-native": "error",
-    // プリミティブラッパーインスタンスするな
+    // プリミティブラッパーインスタンスしないでー！
     "no-new-wrappers": "error",
-    // 正規表現で空の文字クラスを作るな
+    // 正規表現で空の文字クラスを作らないでー！
     "no-empty-character-class": "error",
-    // catch した例外を再割り当てするな
+    // catch した例外を再割り当てしないでー！
     "no-ex-assign": "error",
-    // -0 と比較するな
+    // -0 と比較しないでー！
     "no-compare-neg-zero": "error",
-    // debugger 使うな
+    // debugger 使わないでー！
     "no-debugger": "error",
 
-    // 未使用の変数をほっぽかすな
+    // 未使用の変数をほっぽかさないでー！
     "no-unused-vars": "error",
-    // throw 出来るものを制限する
+    // throw 出来るものを制限するよ
     "no-throw-literal": "error",
-    // Getter は値返せ
+    // Getter は値返してー！
     "getter-return": "error",
-    // Setter は値返すな
+    // Setter は値返さないでー！
     "no-setter-return": "error",
-    // プロパティはドット表記で取得しろ
+    // プロパティはドット表記で取得してー！
     "dot-notation": "error",
-    // "=="/"!=" は曖昧だから使うな
+    // "=="/"!=" は曖昧だから使わないでー！
     "eqeqeq": "error",
-    // alert, confirm, prompt を使うな
+    // alert, confirm, prompt を使わないでー！
     "no-alert": "error",
-    // 浮動小数点は分かりにくいから使うな
+    // 浮動小数点は分かりにくいから使わないでー！
     "no-floating-decimal": "error",
-    // 暗黙の型変換するな
+    // 暗黙の型変換しないでー！
     "no-implicit-coercion": "error",
-    // 自己比較するな
+    // 自己比較しないでー！
     "no-self-compare": "error",
-    // 条件分に定数を使うな
+    // 条件分に定数を使わないでー！
     "no-constant-condition": "error",
-    // .call(), .apply() を使うな
+    // .call(), .apply() を使わないでー！
     "no-useless-call": "error",
-    // 無意味なリテラル連結するな
+    // 無意味なリテラル連結しないでー！
     "no-useless-concat": "error",
-    // case の重複
+    // case が重複してるよー！
     "no-duplicate-case": "error",
-    // 配列に空のスロットを含むな
+    // 配列に空のスロットを含まないでー！
     "no-sparse-arrays": "error",
-    // 到達不可能なコードを書くな
+    // 到達不可能なコードがあるよー！
     "no-unreachable": "error",
-    // 単純な条件式に三項演算を使うな
+    // 単純な条件式に三項演算を使わないでー！
     "no-unneeded-ternary": "error",
     // 無限ループこわぃ ><
     "for-direction": "error",
-    // ループ内での await はパフォーマンス悪いからやめろ
+    // ループ内での await はパフォーマンス悪いからやめたほうがいいよー！
     "no-await-in-loop": "error",
-    // 引数の名前を重複させるな
+    // 引数の名前を重複させないでー！
     "no-dupe-args": "error",
-    // 同じ条件を重複させるな
+    // 同じ条件を重複させないでー！
     "no-dupe-else-if": "error",
     "no-duplicate-case": "error",
-    // オブジェクトのキーを重複させるな
+    // オブジェクトのキーを重複させないでー！
     "no-dupe-keys": "error",
-    // 無意味なブールキャストするな
+    // 無意味なブールキャストしないでー！
     "no-extra-boolean-cast": "error",
-    // function を上書きするな
+    // function を上書きしないでー！
     "no-func-assign": "error",
-    // インポートしたものを上書きするな
+    // インポートしたものを上書きしないでー！
     "no-import-assign": "error",
-    // 正規表現でスペースを複数使うな
+    // 正規表現でスペースを複数使わないでー！
     "no-regex-spaces": "error",
-    // 分かりづらい否定文書くな
+    // 分かりづらい否定文書かないでー！
     "no-unsafe-negation": "error",
-    // isNaN() 使え
+    // isNaN() 使ってー！
     "use-isnan": "error",
 
-    // インデントは 2
+    // インデントは 2 だよー！
     "indent": ["error", 2],
-    // セミコロン入れろ
+    // セミコロン入れてねー！
     "semi": "error",
-    // 変なスペース入れるな eslint:recommended
+    // 変なスペース入れないでー！ eslint:recommended
     "no-irregular-whitespace": "error",
-    // 混乱する複数行式を書くな eslint:recommended
+    // 混乱する複数行式を書かないでー！ eslint:recommended
     "no-unexpected-multiline": "error",
-    // ダブル クオート使え
+    // ダブル クオート使ってー！
     "quotes": "error",
-    // 演算子の前後にスペースを入れろ
+    // 演算子の前後にスペースを入れてー！
     "space-infix-ops": "error",
-    // 余計なスペースを入れるな
+    // 余計なスペースを入れないでー！
     "no-multi-spaces": "error",
-    // 単項演算子の前後にスペースを入れろ
+    // 単項演算子の前後にスペースを入れてー！
     "space-unary-ops": "error",
-    // arrow function の => 前後にスペース入れろ
+    // arrow function の => 前後にスペース入れてー！
     "arrow-spacing": "error",
-    // キーワードの前後にスペース入れろ
+    // キーワードの前後にスペース入れてー！
     "keyword-spacing": "error",
-    // () 前後にスペースを入れるな
+    // () 前後にスペースを入れないでー！
     "space-in-parens": "error",
-    // 改行するならプロパティの前にドットを置け
+    // 改行するならプロパティの前にドットを置いてー！
     "dot-location": ["error", "property"],
-    // テンプレートリテラル使って
+    // テンプレートリテラル使ってー！
     "prefer-template": "error",
-    // 文字列を複数行にしたいならテンプレートリテラル使え
+    // 文字列を複数行にしたいならテンプレートリテラル使ってー！
     "no-multi-str": "error",
     // yoda はダメだよーだ
     "yoda": ["error", "never", { "exceptRange": true }],
-    // 無駄なセミコロンを付けるな
+    // 無駄なセミコロンを付けないでー！
     "no-extra-semi": "error",
 
-    // 空の関数あるけどいいんですか
+    // 空の関数あるけどいいのー？
     "no-empty": "warn",
-    // return あるなら値を返してあげて
+    // return あるなら値を返してあげてー？
     "consistent-return": "warn",
-    // parseInt() の基数は省略しないほうがいいんじゃないかな
+    // parseInt() の基数は省略しないほうがいいんじゃないかなー？
     "radix": "warn",
-    // 不要な () ありますよ
+    // 不要な () ありますよー？
     "no-extra-parens": "warn"
   }
 
