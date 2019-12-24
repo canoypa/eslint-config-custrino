@@ -15,6 +15,8 @@ module.exports = {
     "no-var": "error",
     // Function コンストラクタを使うな
     "no-new-func": "error",
+    // グローバルオブジェクトを呼び出すな
+    "no-obj-calls": "error",
 
     //条件分で代入するな eslint:recommended
     "no-cond-assign": "error",
@@ -26,11 +28,19 @@ module.exports = {
     "no-empty-character-class": "error",
     // catch した例外を再割り当てするな
     "no-ex-assign": "error",
+    // -0 と比較するな
+    "no-compare-neg-zero": "error",
+    // debugger 使うな
+    "no-debugger": "error",
 
     // 未使用の変数をほっぽかすな
     "no-unused-vars": "error",
     // throw 出来るものを制限する
     "no-throw-literal": "error",
+    // Getter は値返せ
+    "getter-return": "error",
+    // Setter は値返すな
+    "no-setter-return": "error",
     // プロパティはドット表記で取得しろ
     "dot-notation": "error",
     // "=="/"!=" は曖昧だから使うな
@@ -57,6 +67,29 @@ module.exports = {
     "no-unreachable": "error",
     // 単純な条件式に三項演算を使うな
     "no-unneeded-ternary": "error",
+    // 無限ループこわぃ ><
+    "for-direction": "error",
+    // ループ内での await はパフォーマンス悪いからやめろ
+    "no-await-in-loop": "error",
+    // 引数の名前を重複させるな
+    "no-dupe-args": "error",
+    // 同じ条件を重複させるな
+    "no-dupe-else-if": "error",
+    "no-duplicate-case": "error",
+    // オブジェクトのキーを重複させるな
+    "no-dupe-keys": "error",
+    // 無意味なブールキャストするな
+    "no-extra-boolean-cast": "error",
+    // function を上書きするな
+    "no-func-assign": "error",
+    // インポートしたものを上書きするな
+    "no-import-assign": "error",
+    // 正規表現でスペースを複数使うな
+    "no-regex-spaces": "error",
+    // 分かりづらい否定文書くな
+    "no-unsafe-negation": "error",
+    // isNaN() 使え
+    "use-isnan": "error",
 
     // インデントは 2
     "indent": ["error", 2],
