@@ -1,5 +1,4 @@
 module.exports = {
-
   rules: {
     // eval 使わないでー！
     "no-eval": "error",
@@ -44,7 +43,7 @@ module.exports = {
     // プロパティはドット表記で取得してー！
     "dot-notation": "error",
     // "=="/"!=" は曖昧だから使わないでー！
-    "eqeqeq": "error",
+    eqeqeq: "error",
     // alert, confirm, prompt を使わないでー！
     "no-alert": "error",
     // 浮動小数点は分かりにくいから使わないでー！
@@ -92,15 +91,15 @@ module.exports = {
     "use-isnan": "error",
 
     // インデントは 2 だよー！
-    "indent": ["error", 2],
+    indent: ["error", 2],
     // セミコロン入れてねー！
-    "semi": "error",
+    semi: "error",
     // 変なスペース入れないでー！ eslint:recommended
     "no-irregular-whitespace": "error",
     // 混乱する複数行式を書かないでー！ eslint:recommended
     "no-unexpected-multiline": "error",
     // ダブル クオート使ってー！
-    "quotes": "error",
+    quotes: "error",
     // 演算子の前後にスペースを入れてー！
     "space-infix-ops": "error",
     // 余計なスペースを入れないでー！
@@ -120,7 +119,7 @@ module.exports = {
     // 文字列を複数行にしたいならテンプレートリテラル使ってー！
     "no-multi-str": "error",
     // yoda はダメだよーだ
-    "yoda": ["error", "never", { "exceptRange": true }],
+    yoda: ["error", "never", { exceptRange: true }],
     // 無駄なセミコロンを付けないでー！
     "no-extra-semi": "error",
 
@@ -129,10 +128,9 @@ module.exports = {
     // return あるなら値を返してあげてー？
     "consistent-return": "warn",
     // parseInt() の基数は省略しないほうがいいんじゃないかなー？
-    "radix": "warn",
+    radix: "warn",
     // 不要な () ありますよー？
     "no-extra-parens": "warn",
-
 
     // getter/setter のペアを強制する
     "accessor-pairs": "error",
@@ -163,5 +161,4 @@ module.exports = {
     // async 関数なのに await 使ってないよー？
     "require-await": "error"
   }
-
 };
