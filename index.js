@@ -1,5 +1,5 @@
 module.exports = {
-
+  
   rules: {
     // eval 使わないでー！
     "no-eval": "error",
@@ -131,7 +131,37 @@ module.exports = {
     // parseInt() の基数は省略しないほうがいいんじゃないかなー？
     "radix": "warn",
     // 不要な () ありますよー？
-    "no-extra-parens": "warn"
+    "no-extra-parens": "warn",
+
+
+    // getter/setter のペアを強制する
+    "accessor-pairs": "error",
+    // 配列メソッドのコールバック関数は値返してー！
+    "array-callback-return": "error",
+    // クラスメソッドでは this 使ってー！
+    "class-methods-use-this": "error",
+    // デフォルト引数は最後にしよー！
+    "default-param-last": "warn",
+    // getter/setter はグループ化してー！
+    "grouped-accessor-pairs": "error",
+    // コンストラクタで値を返さないでー！
+    "no-constructor-return": "error",
+    // 空の function 作らないでー！
+    "no-empty-function": "error",
+    // エラー！わかんないけど！！
+    "no-empty-pattern": "error",
+    // グローバルオブジェクトを上書きしないでー！
+    "no-global-assign": "error",
+    // 自己割当しないでー！
+    "no-self-assign": "error",
+    // コンマ演算子を使わいでー！
+    "no-sequences": "error",
+    // 不要なエスケープ使わないでー！
+    "no-useless-escape": "error",
+    // ES2018 -> 正規表現で名前付きグループが使えるようになるよ
+    // "prefer-named-capture-group": "warn",
+    // async 関数なのに await 使ってないよー？
+    "require-await": "error"
   }
 
 };
