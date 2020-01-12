@@ -1,5 +1,5 @@
 module.exports = {
-  
+
   rules: {
     // eval 使わないでー！
     "no-eval": "error",
