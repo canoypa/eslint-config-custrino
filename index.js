@@ -163,6 +163,8 @@ module.exports = {
     // 宣言前に使わないでー！
     "no-use-before-define": "error",
     // 外部スコープと同名の変数を作らないでー！
-    "no-shadow": "warn"
+    "no-shadow": "warn",
+    // __dirnameand __filename の連結をしないでー！
+    "no-path-concat": "error"
   }
 };
