@@ -91,7 +91,7 @@ module.exports = {
     "use-isnan": "error",
 
     // インデントは 2 だよー！
-    indent: ["error", 2],
+    indent: ["error", 2, { SwitchCase: 1 }],
     // セミコロン入れてねー！
     semi: "error",
     // 変なスペース入れないでー！ eslint:recommended
