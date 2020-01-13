@@ -165,6 +165,60 @@ module.exports = {
     // 外部スコープと同名の変数を作らないでー！
     "no-shadow": "warn",
     // __dirnameand __filename の連結をしないでー！
-    "no-path-concat": "error"
+    "no-path-concat": "error",
+    // 配列の最初に改行しないでー！
+    "array-bracket-newline": ["error", "never"],
+    // 配列の最初にスペースを入れないでー！
+    "array-bracket-spacing": ["error", "never"],
+    // ブロックの最初にはスペース入れてー！
+    "block-spacing": "error",
+    // 改行は 1tbs スタイルにしてー！
+    "brace-style": ["error", "1tbs"],
+    // カンマの後にスペース入れてー！
+    "comma-spacing": "error",
+    // コンマは改行前に入れてー！
+    "comma-style": "error",
+    // 関数と()の間にスペースを入れないでー！
+    "func-call-spacing": "error",
+    // ブロックじゃないアロー関数で改行しないでー！
+    "implicit-arrow-linebreak": "error",
+    // コロン前後のスペース！
+    "key-spacing": "error",
+    // クラスメンバー間に改行を入れてー！
+    "lines-between-class-members": "error",
+    // コンストラクタは大文字で始めてー！
+    "new-cap": ["error", { properties: false }],
+    // コンストラクタには必ず () を付けてー！
+    "new-parens": "error",
+    // Array コンストラクタはサイズ指定のときだけ使ってー！
+    "no-array-constructor": "error",
+    // else 内に単体 if を書かないでー！
+    "no-lonely-if": "error",
+    // コメントはコードの上に書いてー！
+    "line-comment-position": "error",
+    // コメントの前にはスペース入れてー！
+    "lines-around-comment": ["error", { beforeLineComment: true, allowBlockStart: true, allowObjectStart: true, allowArrayStart: true }],
+    // 否定条件で分かりづらくしないでー！
+    "no-negated-condition": "error",
+    // tab を使わないでー！
+    "no-tabs": "error",
+    // 末端にスペースがありますよー！
+    "no-trailing-spaces": "warn",
+    // プロパティ前のスペースやめてー！
+    "no-whitespace-before-property": "error",
+    // 単一ステートメントは一行で！
+    "nonblock-statement-body-position": "error",
+    // {} の後にスペース入れないでー！
+    "object-curly-spacing": "error",
+    // セミコロンを行頭に置かないでねー！
+    "semi-style": "error",
+    // ブロックの前にスペースを入れてねー！
+    "space-before-blocks": "error",
+    // 関数の () の前にスペースを入れないでねー！
+    "space-before-function-paren": ["error", "never"],
+    // コメントは // の後にスペースを入れてねー！
+    "spaced-comment": "error",
+    // swich のコロン前後のスペース！
+    "switch-colon-spacing": "error"
   }
 };
