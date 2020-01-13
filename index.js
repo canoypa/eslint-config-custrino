@@ -159,6 +159,10 @@ module.exports = {
     // ES2018 -> 正規表現で名前付きグループが使えるようになるよ
     // "prefer-named-capture-group": "warn",
     // async 関数なのに await 使ってないよー？
-    "require-await": "error"
+    "require-await": "error",
+    // 宣言前に使わないでー！
+    "no-use-before-define": "error",
+    // 外部スコープと同名の変数を作らないでー！
+    "no-shadow": "warn"
   }
 };
