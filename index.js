@@ -105,8 +105,6 @@ module.exports = {
     "no-throw-literal": "error",
     // コンストラクタで値を返さないでー！
     "no-constructor-return": "error",
-    // クラスメソッドでは this 使ってー！
-    "class-methods-use-this": "error",
     // デフォルト引数は最後にしよー！
     "default-param-last": "warn",
     // getter/setter はグループ化してー！
@@ -232,7 +230,9 @@ module.exports = {
     // parseInt() の基数は省略しないほうがいいんじゃないかなー？
     radix: "warn",
     // 不要な () ありますよー？
-    "no-extra-parens": "warn"
+    "no-extra-parens": "warn",
+    // クラスメソッドでは this 使ってー！
+    "class-methods-use-this": "warn"
 
     // 待機 使いたいけど使えない
 
