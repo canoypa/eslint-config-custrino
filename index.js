@@ -111,10 +111,6 @@ module.exports = {
     "grouped-accessor-pairs": "error",
     // 不要なエスケープ使わないでー！
     "no-useless-escape": "error",
-    // 空の関数あるけどいいのー？
-    "no-empty": "error",
-    // 空の function 作らないでー！
-    "no-empty-function": "error",
     // 自己割当しないでー！
     "no-self-assign": "error",
     // コンマ演算子を使わいでー！
@@ -232,7 +228,11 @@ module.exports = {
     // 不要な () ありますよー？
     "no-extra-parens": "warn",
     // クラスメソッドでは this 使ってー！
-    "class-methods-use-this": "warn"
+    "class-methods-use-this": "warn",
+    // 空の関数あるけどいいのー？
+    "no-empty": "warn",
+    // 空の function 作らないでー！
+    "no-empty-function": "warn"
 
     // 待機 使いたいけど使えない
 
