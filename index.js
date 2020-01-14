@@ -216,8 +216,6 @@ module.exports = {
     "new-parens": "error",
     // コメントはコードの上に書いてー！
     "line-comment-position": "error",
-    // コメントの前にはスペース入れてー！
-    "lines-around-comment": ["error", { beforeLineComment: true, allowBlockStart: true, allowObjectStart: true, allowArrayStart: true }],
     // セミコロンを行頭に置かないでねー！
     "semi-style": "error",
     // 単一ステートメントは一行で！
