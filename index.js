@@ -1,19 +1,11 @@
 module.exports = {
   rules: {
-    // eval 使わないでー！
-    "no-eval": "error",
-    // 文字列コードを使わないでー！
-    "no-implied-eval": "error",
     // with 使わないでー！
     "no-with": "error",
     // arguments 使わないでー！
     "no-caller": "error",
-    // script url を使わないでー！
-    "no-script-url": "error",
     // var 使わないでー！
     "no-var": "error",
-    // Function コンストラクタを使わないでー！
-    "no-new-func": "error",
     // グローバルオブジェクトを呼び出すなー！
     "no-obj-calls": "error",
 
@@ -56,14 +48,8 @@ module.exports = {
     "no-constant-condition": "error",
     // .call(), .apply() を使わないでー！
     "no-useless-call": "error",
-    // 無意味なリテラル連結しないでー！
-    "no-useless-concat": "error",
-    // case が重複してるよー！
-    "no-duplicate-case": "error",
     // 配列に空のスロットを含まないでー！
     "no-sparse-arrays": "error",
-    // 到達不可能なコードがあるよー！
-    "no-unreachable": "error",
     // 単純な条件式に三項演算を使わないでー！
     "no-unneeded-ternary": "error",
     // 無限ループこわぃ ><
