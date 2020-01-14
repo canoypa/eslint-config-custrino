@@ -131,6 +131,10 @@ module.exports = {
     "no-useless-rename": "error",
     // __dirnameand __filename の連結をしないでー！
     "no-path-concat": "error",
+    // メンバーのオーバーロードはグループ化してー！
+    "@typescript-eslint/adjacent-overload-signatures": "error",
+    // 配列の型は場合に応じて使い分けてー！
+    "@typescript-eslint/array-type": ["error", { default: "array-simple" }],
 
     // スタイル わたしいろ
 
