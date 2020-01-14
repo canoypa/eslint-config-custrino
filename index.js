@@ -219,6 +219,34 @@ module.exports = {
     // コメントは // の後にスペースを入れてねー！
     "spaced-comment": "error",
     // swich のコロン前後のスペース！
-    "switch-colon-spacing": "error"
+    "switch-colon-spacing": "error",
+    // 省略できるアロー関数は省略してー！
+    "arrow-body-style": ["error", "as-needed", { requireReturnForObjectLiteral: true }],
+    // 無効な super しないでー！
+    "constructor-super": "error",
+    // ジェネレータ関数は function* ！
+    // pritter と重複
+    // "generator-star-spacing": ["error", { before: false, after: true }],
+    // "yield-star-spacing": ["error", "after"],
+    // クラス変数を書き換えないでー！
+    "no-class-assign": "error",
+    // 同じモジュールからインポートしてますよー？
+    "no-duplicate-imports": "warn",
+    // new Symbol() しないでー！
+    "no-new-symbol": "error",
+    // インポートを同名に割り当てないでー！
+    "no-useless-rename": "error",
+    // コールバック関数にはアロー関数を使ってー！
+    "prefer-arrow-callback": "error",
+    // 一回しか呼ばれてないよ！ const にしない？
+    "prefer-const": "warn",
+    // .apply() じゃなくてスプレッド構文使ってー！
+    "prefer-spread": "error",
+    // ジェネレータ関数では yield 使ってー！
+    "require-yield": "error",
+    // スプレッド演算子と変数の間にスペースを入れないでー！
+    "rest-spread-spacing": ["error", "never"],
+    // arguments 使わないでー！
+    "prefer-rest-params": "error"
   }
 };
