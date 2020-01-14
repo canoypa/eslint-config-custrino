@@ -209,7 +209,7 @@ module.exports = {
     // ブロックじゃないアロー関数で改行しないでー！
     "implicit-arrow-linebreak": "error",
     // クラスメンバー間に改行を入れてー！
-    "lines-between-class-members": "error",
+    "lines-between-class-members": ["error", "always", { exceptAfterSingleLine: true }],
     // コンストラクタは大文字で始めてー！
     "new-cap": ["error", { properties: false }],
     // コンストラクタには必ず () を付けてー！
