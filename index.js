@@ -208,8 +208,8 @@ module.exports = {
     "no-whitespace-before-property": "error",
     // 単一ステートメントは一行で！
     "nonblock-statement-body-position": "error",
-    // {} の後にスペース入れないでー！
-    "object-curly-spacing": "error",
+    // {} の後にスペース入れてー！
+    "object-curly-spacing": ["error", "always"],
     // セミコロンを行頭に置かないでねー！
     "semi-style": "error",
     // ブロックの前にスペースを入れてねー！
