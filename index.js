@@ -196,8 +196,6 @@ module.exports = {
     yoda: ["error", "never", { exceptRange: true }],
     // 無駄なセミコロンを付けないでー！
     "no-extra-semi": "error",
-    // 配列の最初に改行しないでー！
-    "array-bracket-newline": ["error", "never"],
     // 配列の最初にスペースを入れないでー！
     "array-bracket-spacing": ["error", "never"],
     // 改行は 1tbs スタイルにしてー！
