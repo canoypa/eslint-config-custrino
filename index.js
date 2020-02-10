@@ -229,8 +229,6 @@ module.exports = {
     radix: "warn",
     // 不要な () ありますよー？
     "no-extra-parens": "warn",
-    // クラスメソッドでは this 使ってー！
-    "class-methods-use-this": "warn",
     // 空の関数あるけどいいのー？
     "no-empty": "warn",
     // 空の function 作らないでー！
