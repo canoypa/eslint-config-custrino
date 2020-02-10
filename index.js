@@ -74,8 +74,6 @@ module.exports = {
     "no-debugger": "error",
     // 無限ループこわぃ ><
     "for-direction": "error",
-    // 未使用の変数をほっぽかさないでー！
-    "@typescript-eslint/no-unused-vars": "error",
 
     // 改善 より良くするのだ
 
