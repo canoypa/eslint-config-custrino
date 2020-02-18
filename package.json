@@ -5,6 +5,9 @@
   "license": "MIT",
   "author": "cano",
   "repository": "canoypa/eslint-config-custrino",
+  "files": [
+    "index.js"
+  ],
   "keywords": [
     "eslint"
   ],
