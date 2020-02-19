@@ -2,12 +2,13 @@
 
 Strict ESLint shareable configurations
 
-## Install
+## Installation
+
 ```shell
 npm install --save-dev eslint-config-custrino
 ```
 
-## Using
+## Usage
 
 Used by specifying `extend` in ESLint configuration file
 
