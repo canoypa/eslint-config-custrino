@@ -109,7 +109,7 @@ module.exports = {
     "no-lonely-if": "warn", // else 内に単体 if を書かないでー！
     "consistent-return": "warn", // return あるなら値を返してー！
     radix: "warn", // parseInt() の基数は省略しないでー！
-    "no-extra-parens": "warn", // 不要な () ！
+    "no-extra-parens": ["warn", { ignoreJSX: "multi-line" }], // 不要な () ！
     "no-empty": "warn", // 空のブロック作らないでー！
     "no-empty-function": "warn", // 空の function 作らないでー！
     "prefer-const": "warn", // const に出来るよー！
