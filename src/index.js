@@ -13,6 +13,7 @@ module.exports = {
     "no-irregular-whitespace": "error", // よく分かんない空白文字を入れないでー！
     "no-new-symbol": "error", // new Symbol() しないでー！
     "no-obj-calls": "error", // グローバルオブジェクトを呼び出すなー！
+    "no-unmodified-loop-condition": "error", // while の条件が不変だよ！
 
     // エラーの元
     "no-var": "error", // var 使わないでー！
@@ -84,6 +85,7 @@ module.exports = {
     "new-parens": "error", // コンストラクタには必ず () を付けてー！
     "lines-between-class-members": ["error", "always", { exceptAfterSingleLine: true }], // クラスメンバー間に改行を入れてー！
     "new-cap": ["error", { properties: false }], // コンストラクタ名は大文字で始めてー！
+    "no-confusing-arrow": "error", // 比較と勘違いしそうな array function は括弧で囲ってね！
     "@typescript-eslint/adjacent-overload-signatures": "error", // メンバーのオーバーロードはグループ化してー！
 
     // 可読性に著しく影響を与えるほどではないけど
@@ -109,10 +111,13 @@ module.exports = {
     "no-lonely-if": "warn", // else 内に単体 if を書かないでー！
     "consistent-return": "warn", // return あるなら値を返してー！
     radix: "warn", // parseInt() の基数は省略しないでー！
-    "no-extra-parens": ["warn", { ignoreJSX: "multi-line" }], // 不要な () ！
+    "no-extra-parens": ["warn", "all", { enforceForArrowConditionals: false, ignoreJSX: "multi-line" }], // 不要な () ！
     "no-empty": "warn", // 空のブロック作らないでー！
     "no-empty-function": "warn", // 空の function 作らないでー！
     "prefer-const": "warn", // const に出来るよー！
+    "operator-assignment": "warn", // 出来るだけ演算子を省略してね！
+    "operator-linebreak": ["warn", "before"], // オペレータの前で改行してね！
+    "prefer-exponentiation-operator": "warn", // Math.pow の代わりに ** が使えるよ！
     "@typescript-eslint/array-type": ["warn", { default: "array-simple" }], // 配列の型は場合に応じて使い分けてー！
 
     // Node.js
