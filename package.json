@@ -12,7 +12,11 @@
     "index.js"
   ],
   "keywords": [
-    "eslint"
+    "eslint",
+    "eslintconfig",
+    "code style",
+    "strict",
+    "lint"
   ],
   "devDependencies": {
     "eslint": "^6.8.0",
