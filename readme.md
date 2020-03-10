@@ -1,6 +1,6 @@
 # ESLint Config Custrino
 
-Strict ESLint shareable configurations
+Strict ESLint shareable configurations.
 
 ## Installation
 
@@ -10,7 +10,7 @@ npm install --save-dev eslint-config-custrino
 
 ## Usage
 
-Used by specifying `extend` in ESLint configuration file
+Used by specifying `extend` in ESLint configuration file.
 
 ```js
 {
@@ -20,3 +20,5 @@ Used by specifying `extend` in ESLint configuration file
   }
 }
 ```
+
+If you don't use TypeScript in your project, use `custrino/no-ts`.
