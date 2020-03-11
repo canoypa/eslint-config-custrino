@@ -9,7 +9,8 @@
     "build": "uglifyjs src/index.js -o index.js && uglifyjs src/no-ts.js -o no-ts.js"
   },
   "files": [
-    "index.js"
+    "index.js",
+    "no-ts.js"
   ],
   "keywords": [
     "eslint",
