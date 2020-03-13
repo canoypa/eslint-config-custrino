@@ -9,8 +9,7 @@
     "build": "uglifyjs src/base.js -o dist/base.js && uglifyjs src/typescript.js -o dist/typescript.js"
   },
   "files": [
-    "dist/base.js",
-    "dist/typescript.js"
+    "dist/*"
   ],
   "keywords": [
     "eslint",
