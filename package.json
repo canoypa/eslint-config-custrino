@@ -8,6 +8,7 @@
   "scripts": {
     "build": "uglifyjs src/base.js -o dist/base.js && uglifyjs src/typescript.js -o dist/typescript.js"
   },
+  "main": "dist/typescript.js",
   "files": [
     "dist/*"
   ],
