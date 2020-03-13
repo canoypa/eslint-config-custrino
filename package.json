@@ -6,11 +6,11 @@
   "author": "cano",
   "repository": "canoypa/eslint-config-custrino",
   "scripts": {
-    "build": "uglifyjs src/index.js -o index.js && uglifyjs src/no-ts.js -o no-ts.js"
+    "build": "uglifyjs src/index.js -o dist/index.js && uglifyjs src/no-ts.js -o dist/no-ts.js"
   },
   "files": [
-    "index.js",
-    "no-ts.js"
+    "dist/index.js",
+    "dist/no-ts.js"
   ],
   "keywords": [
     "eslint",
