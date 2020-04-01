@@ -40,6 +40,7 @@ module.exports = {
     "no-alert": "error", // alert, confirm, prompt を使わないでー！
     "no-debugger": "error", // debugger 使わないでー！
     "for-direction": "error", // for ループの条件分の形を強制する
+    "no-fallthrough": "error", // case 文のフォールスルーなし
 
     // 著しく可読性を損なったり損なわなかったりするもの
     "no-unexpected-multiline": "error", // 混乱する複数行式を書かないでー！
