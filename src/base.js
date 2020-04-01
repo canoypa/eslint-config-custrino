@@ -42,6 +42,7 @@ module.exports = {
     "for-direction": "error", // for ループの条件分の形を強制する
     "no-fallthrough": "error", // case 文のフォールスルーなし
     "consistent-return": "error", // return あるなら値を返してー！
+    "no-unused-vars": "error", // 未使用の変数なし
 
     // 著しく可読性を損なったり損なわなかったりするもの
     "no-unexpected-multiline": "error", // 混乱する複数行式を書かないでー！
