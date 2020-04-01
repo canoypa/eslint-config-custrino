@@ -41,6 +41,7 @@ module.exports = {
     "no-debugger": "error", // debugger 使わないでー！
     "for-direction": "error", // for ループの条件分の形を強制する
     "no-fallthrough": "error", // case 文のフォールスルーなし
+    "consistent-return": "error", // return あるなら値を返してー！
 
     // 著しく可読性を損なったり損なわなかったりするもの
     "no-unexpected-multiline": "error", // 混乱する複数行式を書かないでー！
@@ -109,7 +110,6 @@ module.exports = {
     "array-bracket-spacing": ["warn", "never"], // 配列内にスペースを入れないでー！
     "no-duplicate-imports": "warn", // 同じモジュールからのインポートはまとめてー！
     "no-lonely-if": "warn", // else 内に単体 if を書かないでー！
-    "consistent-return": "warn", // return あるなら値を返してー！
     radix: "warn", // parseInt() の基数は省略しないでー！
     "no-extra-parens": ["warn", "all", { enforceForArrowConditionals: false, ignoreJSX: "multi-line" }], // 不要な () ！
     "no-empty": "warn", // 空のブロック作らないでー！
