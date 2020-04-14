@@ -6,9 +6,9 @@
   "author": "cano",
   "repository": "canoypa/eslint-config-custrino",
   "scripts": {
-    "build": "uglifyjs src/base.js -o dist/base.js && uglifyjs src/typescript.js -o dist/typescript.js"
+    "build": "node ./scripts/build"
   },
-  "main": "dist/typescript.js",
+  "main": "typescript.js",
   "files": [
     "dist/*"
   ],
@@ -26,6 +26,7 @@
   },
   "devDependencies": {
     "eslint": "^6.8.0",
+    "js-yaml": "^3.13.1",
     "uglify-es": "^3.3.9"
   },
   "peerDependencies": {

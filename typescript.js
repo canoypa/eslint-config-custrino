@@ -1,0 +1,1 @@
+module.exports={extends:["./rules/base","./rules/typescript"],parser:"@typescript-eslint/parser",plugins:["@typescript-eslint"]};
