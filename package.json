@@ -10,7 +10,7 @@
   },
   "main": "typescript.js",
   "files": [
-    "dist/*"
+    "dist"
   ],
   "keywords": [
     "eslint",
