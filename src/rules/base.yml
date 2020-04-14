@@ -82,7 +82,11 @@ rules:
   space-before-function-paren: ["error", "never"] # 関数の () の前にスペースを入れないでねー！
   func-call-spacing: error # 関数呼び出しの () 前にスペース入れないでー！
   new-parens: error # コンストラクタには必ず () を付けてー！
-  lines-between-class-members: ["error", "always", { exceptAfterSingleLine: true }] # クラスメンバー間に改行を入れてー！
+  lines-between-class-members: [
+      "error",
+      "always",
+      { exceptAfterSingleLine: true },
+    ] # クラスメンバー間に改行を入れてー！
   new-cap: ["error", { properties: false }] # コンストラクタ名は大文字で始めてー！
   no-confusing-arrow: error # 比較と勘違いしそうな array function は括弧で囲ってね！
 
@@ -109,7 +113,11 @@ rules:
   no-lonely-if: warn # else 内に単体 if を書かないでー！
   consistent-return: warn # return あるなら値を返してー！
   radix: warn # parseInt() の基数は省略しないでー！
-  no-extra-parens: ["warn", "all", { enforceForArrowConditionals: false, ignoreJSX: "all" }] # 不要な () ！
+  no-extra-parens: [
+      "warn",
+      "all",
+      { enforceForArrowConditionals: false, ignoreJSX: "all" },
+    ] # 不要な () ！
   no-empty: warn # 空のブロック作らないでー！
   no-empty-function: warn # 空の function 作らないでー！
   prefer-const: warn # const に出来るよー！
