@@ -3,7 +3,6 @@ const fs = require("fs");
 const path = require("path");
 const UglifyJS = require("uglify-es");
 
-const dist = "dist";
 const src = "src";
 
 const build = (outputPath, filePath) => {
@@ -18,9 +17,7 @@ const build = (outputPath, filePath) => {
 const foo = (dir, root = "") => {
   dir.forEach((fileName) => {
     const filePath = path.resolve(src, root, fileName);
-    const outputPath = path
-      .resolve(dist, root, fileName)
-      .replace(/.yml$/, ".js");
+    const outputPath = path.resolve(root, fileName).replace(/.yml$/, ".js");
 
     if (fs.statSync(filePath).isDirectory()) {
       foo(fs.readdirSync(filePath), fileName);
