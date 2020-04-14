@@ -5,7 +5,7 @@ Strict ESLint shareable configurations.
 ## Installation
 
 ```shell
-npm install --save-dev eslint-config-custrino
+yarn add --dev eslint-config-custrino
 ```
 
 ## Usage
