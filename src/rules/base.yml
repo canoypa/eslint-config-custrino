@@ -106,7 +106,6 @@ rules:
   no-trailing-spaces: warn # 末端にスペースがありますよー！
   object-curly-spacing: ["warn", "always"] # {} の後にスペース入れてー！
   space-before-blocks: warn # ブロックの前にスペースを入れてねー！
-  spaced-comment: warn # コメントは // の後にスペースを入れてねー！
   switch-colon-spacing: warn # swich のコロン前後のスペース！
   array-bracket-spacing: ["warn", "never"] # 配列内にスペースを入れないでー！
   no-duplicate-imports: warn # 同じモジュールからのインポートはまとめてー！
