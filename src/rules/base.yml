@@ -58,7 +58,6 @@ rules:
   no-extra-semi: error # 無駄なセミコロンを付けないでー！
   brace-style: ["error", "1tbs"] # 改行は 1tbs スタイルにしてー！
   comma-style: error # コンマは改行前に入れてー！
-  implicit-arrow-linebreak: error # ブロックじゃないアロー関数で改行しないでー！
   semi-style: error # セミコロンを行頭に置かないでねー！
   nonblock-statement-body-position: error # 単一ステートメントは一行で！
   prefer-arrow-callback: error # コールバック関数にはアロー関数を使ってー！
