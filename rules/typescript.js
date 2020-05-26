@@ -1,1 +1,0 @@
-module.exports={rules:{"@typescript-eslint/adjacent-overload-signatures":"error","@typescript-eslint/array-type":["warn",{default:"array-simple"}]}};
