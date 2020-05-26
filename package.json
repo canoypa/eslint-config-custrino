@@ -10,6 +10,7 @@
   },
   "main": "typescript.js",
   "files": [
+    "no-ts.js",
     "rules"
   ],
   "keywords": [
