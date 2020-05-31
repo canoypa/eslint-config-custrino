@@ -7,6 +7,7 @@ rules:
   no-unmodified-loop-condition: error # while の条件が不変だよ！
   no-irregular-whitespace: error # よく分かんない空白文字を入れないでー！
   no-empty-character-class: error # 正規表現で空の文字クラスを作らないでー！
+  no-empty-pattern: error # 分割代入時のデフォルト値記述ミス
 
   no-global-assign: error # グローバルオブジェクトを上書きしないでー！
   no-extend-native: error # ネイティブオブジェクトを拡張しないでー！
@@ -19,7 +20,6 @@ rules:
   no-var: error # var 使わないでー！
   no-sparse-arrays: error # 配列に空のスロットを含まないでー！
   eqeqeq: error # "=="/"!=" は曖昧だから使わないでー！
-  no-empty-pattern: error # エラー！わかんないけど！！
   no-cond-assign: error # 条件分で代入しないでー！
   no-useless-call: error # .call() .apply() は通常の関数呼び出しに置き換えてー！
   prefer-spread: error # .apply() じゃなくてスプレッド構文使ってー！
