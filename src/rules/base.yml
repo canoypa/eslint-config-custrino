@@ -66,6 +66,7 @@ rules:
   no-negated-condition: error # 否定条件で分かりづらくしないでー！
   no-useless-rename: error # インポートを同名に割り当てないでー！
   no-array-constructor: error # Array コンストラクタを使わないでー！
+  no-new-object: error # Object コンストラクタを使わないでー！
   require-await: error # async 関数では await 使ってー！
   require-yield: error # ジェネレータ関数では yield 使ってー！
   no-await-in-loop: error # ループ内での await はパフォーマンス悪いからやめたほうがいいよー！
