@@ -1,18 +1,19 @@
 rules:
   # エラーそのもの
+  constructor-super: error # 無効な super しないでー！
+  no-compare-neg-zero: error # -0 と比較しないでー！
+  no-new-symbol: error # new Symbol() しないでー！
+  no-obj-calls: error # グローバルオブジェクトを呼び出すなー！
+  no-unmodified-loop-condition: error # while の条件が不変だよ！
+  no-irregular-whitespace: error # よく分かんない空白文字を入れないでー！
+  no-empty-character-class: error # 正規表現で空の文字クラスを作らないでー！
+
   no-global-assign: error # グローバルオブジェクトを上書きしないでー！
   no-extend-native: error # ネイティブオブジェクトを拡張しないでー！
   no-func-assign: error # function を上書きしないでー！
   no-class-assign: error # クラス変数を書き換えないでー！
   no-import-assign: error # インポートしたものを上書きしないでー！
   no-ex-assign: error # catch した例外を再割り当てしないでー！
-  constructor-super: error # 無効な super しないでー！
-  no-compare-neg-zero: error # -0 と比較しないでー！
-  no-empty-character-class: error # 正規表現で空の文字クラスを作らないでー！
-  no-irregular-whitespace: error # よく分かんない空白文字を入れないでー！
-  no-new-symbol: error # new Symbol() しないでー！
-  no-obj-calls: error # グローバルオブジェクトを呼び出すなー！
-  no-unmodified-loop-condition: error # while の条件が不変だよ！
 
   # エラーの元
   no-var: error # var 使わないでー！
