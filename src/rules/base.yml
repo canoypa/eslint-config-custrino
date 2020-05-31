@@ -123,9 +123,6 @@ rules:
   operator-linebreak: ["warn", "before"] # オペレータの前で改行してね！
   prefer-exponentiation-operator: warn # Math.pow の代わりに ** が使えるよ！
 
-  # Node.js
-  no-path-concat: error # __dirnameand __filename の連結をしないでー！
-
   # 待機 使いたいけど使えない
   #
   # TypeScript が未対応?
