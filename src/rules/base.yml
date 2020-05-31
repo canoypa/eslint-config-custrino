@@ -124,6 +124,7 @@ rules:
   operator-assignment: warn # 出来るだけ演算子を省略してね！
   operator-linebreak: ["warn", "before"] # オペレータの前で改行してね！
   prefer-exponentiation-operator: warn # Math.pow の代わりに ** が使えるよ！
+  no-unused-vars: warn # 未使用の変数があるよ！
 
   # 待機 使いたいけど使えない
   #
