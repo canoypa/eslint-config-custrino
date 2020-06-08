@@ -63,7 +63,6 @@ rules:
   semi-style: error # セミコロンを行頭に置かないでねー！
   nonblock-statement-body-position: error # 単一ステートメントは一行で！
   prefer-arrow-callback: error # コールバック関数にはアロー関数を使ってー！
-  arrow-body-style: ["error", "as-needed"] # 省略できるアロー関数は省略してー！
   no-negated-condition: error # 否定条件で分かりづらくしないでー！
   no-useless-rename: error # インポートを同名に割り当てないでー！
   no-array-constructor: error # Array コンストラクタを使わないでー！
@@ -126,6 +125,7 @@ rules:
   operator-linebreak: ["warn", "before"] # オペレータの前で改行してね！
   prefer-exponentiation-operator: warn # Math.pow の代わりに ** が使えるよ！
   no-unused-vars: warn # 未使用の変数があるよ！
+  arrow-body-style: ["warn", "as-needed"] # 省略できるアロー関数は省略してー！
 
   # 待機 使いたいけど使えない
   #
