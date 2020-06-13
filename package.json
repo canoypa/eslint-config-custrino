@@ -9,7 +9,7 @@
     "build": "node ./scripts/build"
   },
   "files": [
-    "no-ts.js",
+    "/*.js",
     "rules"
   ],
   "keywords": [
