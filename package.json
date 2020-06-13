@@ -8,7 +8,6 @@
   "scripts": {
     "build": "node ./scripts/build"
   },
-  "main": "typescript.js",
   "files": [
     "no-ts.js",
     "rules"
