@@ -31,6 +31,6 @@
     "uglify-es": "^3.3.9"
   },
   "peerDependencies": {
-    "eslint": ">=7.0.0"
+    "eslint": "^7.0.0"
   }
 }
