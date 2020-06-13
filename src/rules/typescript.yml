@@ -1,6 +1,7 @@
 rules:
   no-unused-vars: off # 型定義
 
+  "@typescript-eslint/no-unused-vars": warn # 未使用の変数があるよー！ (型定義に対応
   "@typescript-eslint/adjacent-overload-signatures": error # メンバーのオーバーロードはグループ化してー！
   "@typescript-eslint/array-type": [warn, { default: array-simple }] # 配列の型は場合に応じて使い分けてー！
 
