@@ -1,4 +1,3 @@
-extends: ./rules/typescript
 parser: "@typescript-eslint/parser"
 plugins: ["@typescript-eslint"]
 

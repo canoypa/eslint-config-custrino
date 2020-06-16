@@ -1,5 +1,3 @@
-extends: ./rules/base
-
 rules:
   # エラーそのもの
   constructor-super: error # 無効な super しないでー！
