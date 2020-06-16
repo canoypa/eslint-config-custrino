@@ -89,6 +89,7 @@ rules:
       { exceptAfterSingleLine: true },
     ] # クラスメンバー間に改行を入れてー！
   new-cap: ["error", { properties: false }] # コンストラクタ名は大文字で始めてー！
+  default-case-last: error
 
   # 可読性に著しく影響を与えるほどではないけど
   no-tabs: warn # tab を使わないでー！
