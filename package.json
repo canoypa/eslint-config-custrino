@@ -9,8 +9,7 @@
     "build": "node ./scripts/build"
   },
   "files": [
-    "/*.js",
-    "rules"
+    "/*.js"
   ],
   "keywords": [
     "eslint",
