@@ -5,32 +5,35 @@ ESLint shareable configurations.
 ## Installation
 
 ```shell
-yarn add --dev eslint-config-custrino
+$ npm install --save-dev eslint-config-custrino
 ```
 
 ## Usage
 
-Apply rules according to the purpose of use.
-
-Used by specifying `extend` in ESLint configuration file.
+Used by specifying in the `extends` section of the ESLint configuration.
 
 ```js
 {
-  "extends": "custrino",
-  // or "extends": ["custrino", "custrino/xxx"],
+  "extends":
+    - "custrino"
+    - "custrino/xxx"
   "rules": {
     // Additional, per-project rules ...
   }
 }
 ```
 
-### `custrino`
+### Select Rule
 
-ESLint Contains default rules.
+There are several rules depending on the intended use.
 
-### `custrino/typescript`
+#### `custrino`
 
-Add a rule from ESLint TypeScript.
+Contains standard ESLint rules.
+
+#### `custrino/typescript`
+
+Contains TypeScript rules.
 
 The following packages are additionally required to use this rule:
 
