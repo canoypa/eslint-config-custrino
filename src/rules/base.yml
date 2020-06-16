@@ -136,3 +136,5 @@ rules:
   # "generator-star-spacing": ["warn"" "after"] // ジェネレータ関数 * の後ろにスペース入れてー！
   # "yield-star-spacing": ["warn"" "after"] // yield* の後ろにスペース入れてー！
   # no-confusing-arrow: error # 比較と勘違いしそうな array function は括弧で囲ってね！
+  #
+  # no-loss-of-precision: error # Number の丸め込みで制度を失う
