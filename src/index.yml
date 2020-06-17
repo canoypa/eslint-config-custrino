@@ -42,6 +42,7 @@ rules:
   for-direction: error # for ループの条件分の形を強制する
   no-fallthrough: error # switch 文にフォールスルーがあるよ！
   no-useless-backreference: error # 無意味な後方参照があるよー！
+  no-delete-var: error # delete 使わないでー！
 
   # 著しく可読性を損なったり損なわなかったりするもの
   no-unexpected-multiline: error # 混乱する複数行式を書かないでー！
