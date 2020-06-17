@@ -3,7 +3,7 @@ const fs = require("fs");
 const path = require("path");
 const Terser = require("terser");
 
-const src = "src";
+const src = "rules";
 
 const build = (outputPath, filePath) => {
   const file = fs.readFileSync(filePath);
