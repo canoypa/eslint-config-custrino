@@ -36,6 +36,7 @@ rules:
   "@typescript-eslint/brace-style": [warn, 1tbs] # 改行は 1tbs スタイルにしてー！ 型定義のサポート？
   default-param-last: off
   "@typescript-eslint/default-param-last": warn # デフォルト引数は最後にしよー！ ?記法のサポート
+
   # lines-between-class-members: off
   # "@typescript-eslint/lines-between-class-members": # クラスメンバー間に改行入れてー！ オーバーロードを無視 使えない？
   #   ["warn", "always", { exceptAfterOverload: true }]
