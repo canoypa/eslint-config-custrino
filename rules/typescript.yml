@@ -4,7 +4,7 @@ plugins: ["@typescript-eslint"]
 rules:
   "@typescript-eslint/adjacent-overload-signatures": error # メンバーのオーバーロードはグループ化してー！
   "@typescript-eslint/array-type": [warn, { default: array-simple }] # 配列の型は場合に応じて使い分けてー！
-  "@typescript-eslint/ban-ts-comment": warn # @ts コメントを抑制 allow-with-description 使えない?
+  # "@typescript-eslint/ban-ts-comment": warn # @ts コメントを抑制 allow-with-description 使えない?
   "@typescript-eslint/ban-types": warn # その型は使っちゃだめ ><
   "@typescript-eslint/member-delimiter-style": warn # 型定義メンバー区切り文字のスタイル
   # "@typescript-eslint/no-invalid-void-type": warn # void の使い方がおかしいよー！ 使えない？
