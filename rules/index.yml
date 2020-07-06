@@ -82,7 +82,7 @@ rules:
   no-sequences: error # コンマ演算子を使わいでー！
   no-shadow: error # 外部スコープと同名の変数を作らないでー！
   default-param-last: error # デフォルト引数は最後にしよー！
-  space-before-function-paren: ["error", "never"] # 関数の () の前にスペースを入れないでねー！
+  space-before-function-paren: ["error", "never", { asyncArrow: "always" }] # 関数の () の前にスペースを入れないでねー！
   func-call-spacing: error # 関数呼び出しの () 前にスペース入れないでー！
   new-parens: error # コンストラクタには必ず () を付けてー！
   new-cap: ["error", { properties: false }] # コンストラクタ名は大文字で始めてー！
