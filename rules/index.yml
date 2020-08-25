@@ -126,7 +126,7 @@ rules:
   no-empty-function: warn # 空の function 作らないでー！
   prefer-const: warn # const に出来るよー！
   operator-assignment: warn # 出来るだけ演算子を省略してね！
-  operator-linebreak: ["warn", "before"] # オペレータの前で改行してね！
+  operator-linebreak: ["warn", "after"] # オペレータの後で改行してね！
   prefer-exponentiation-operator: warn # Math.pow の代わりに ** が使えるよ！
   arrow-body-style: ["warn", "as-needed"] # 省略できるアロー関数は省略してー！
 
