@@ -39,3 +39,12 @@ The following packages are additionally required to use this rule:
 
 - [@typescript-eslint/parser](https://www.npmjs.com/package/@typescript-eslint/parser)
 - [@typescript-eslint/eslint-plugin](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin)
+
+#### `custrino/react`
+
+Contains React rules.
+
+The following packages are additionally required to use this rule:
+
+- [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks)
+- [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)
