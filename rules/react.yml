@@ -1,0 +1,32 @@
+parserOptions:
+  ecmaFeatures:
+    jsx: true
+
+plugins:
+  - react-hooks
+  - react
+
+rules:
+  # 大問題
+  react-hooks/rules-of-hooks: error # hooks のルール違反
+  react/no-unescaped-entities: error # 無効な文字があるよー！
+  react/no-unknown-property: error # 無効なプロパティがあるよー！
+  react/no-danger: error # 危険なプロパティを使わないでー！
+
+  # 非推奨とか
+  react-hooks/exhaustive-deps: warn # 依存配列関係のなんか...
+  react/no-children-prop: warn # children prop を使わないでー！
+  react/no-array-index-key: warn # key にインデックスを指定しないでー！
+
+  # スタイル的な
+  react/jsx-boolean-value: warn # boolean prop は省略できるよー！
+
+
+  # 何らかの理由で無効なルール
+  # そこまでは...
+  # react/no-multi-comp: warn # 1ファイルに複数コンポーネントを定義しないでー！
+  # 動く？
+  # react/no-unused-prop-types: warn # 未使用の Prop 定義があるよー！
+
+  # Todo: add JSX-specific rules
+  # https://github.com/yannickcr/eslint-plugin-react#jsx-specific-rules
