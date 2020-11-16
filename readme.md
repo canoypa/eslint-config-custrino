@@ -1,6 +1,6 @@
 # ESLint Config Custrino
 
-ESLint shareable configurations.
+A personally created ESLint shareable configuration set.
 
 ## Installation
 
@@ -12,39 +12,34 @@ $ npm install --save-dev eslint-config-custrino
 
 Used by specifying in the `extends` section of the ESLint configuration.
 
-```js
+```jsonc
 {
-  "extends":
-    - "custrino"
-    - "custrino/xxx"
-  "rules": {
-    // Additional, per-project rules ...
-  }
+  "extends": ["custrino", "custrino/xxxxxx"]
 }
 ```
 
-### Select Rule
+### Additional configurations
 
-There are several rules depending on the intended use.
+Additional configurations can be used depending on the project.
 
-#### `custrino`
-
-Contains standard ESLint rules.
+You need to add a corresponding plugin.
 
 #### `custrino/typescript`
 
-Contains TypeScript rules.
+This configuration enables the rules for TypeScript and any additional rules supported by the TypeScript ESLint plugin.
 
-The following packages are additionally required to use this rule:
+Add required plugins:
 
-- [@typescript-eslint/parser](https://www.npmjs.com/package/@typescript-eslint/parser)
-- [@typescript-eslint/eslint-plugin](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin)
+```shell
+$ npm install --save-dev @typescript-eslint/parser @typescript-eslint/eslint-plugin
+```
 
 #### `custrino/react`
 
-Contains React rules.
+This configuration enables the rules for React.
 
-The following packages are additionally required to use this rule:
+Add required plugins:
 
-- [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks)
-- [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)
+```shell
+$ npm install --save-dev eslint-plugin-react-hooks eslint-plugin-react
+```
