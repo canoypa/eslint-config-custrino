@@ -45,6 +45,7 @@ rules:
   no-delete-var: error # delete 使わないでー！
 
   # 著しく可読性を損なったり損なわなかったりするもの
+  no-unused-vars: [error, varsIgnorePattern: ^_]
   no-unexpected-multiline: error # 混乱する複数行式を書かないでー！
   space-unary-ops: error # foo ++; <- みたいなのはやめてー！
   prefer-template: error # テンプレートリテラル使ってー！
