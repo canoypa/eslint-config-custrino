@@ -32,7 +32,9 @@ rules:
   no-extra-boolean-cast: error # 無意味なブールキャストしないでー！
   no-self-compare: error # 自己比較しないでー！
   no-constant-condition: error # 条件分に定数を使わないでー！
-  accessor-pairs: ["error", { enforceForClassMembers: true }] # getter/setter のペアを強制する
+  accessor-pairs: # getter/setter のペアを強制する
+    - error
+    - enforceForClassMembers: true
   getter-return: error # Getter は値返してー！
   no-setter-return: error # Setter は値返さないでー！
   prefer-rest-params: error # arguments 使わないでー！
@@ -45,7 +47,9 @@ rules:
   no-delete-var: error # delete 使わないでー！
 
   # 著しく可読性を損なったり損なわなかったりするもの
-  no-unused-vars: [error, varsIgnorePattern: ^_]
+  no-unused-vars:
+    - error
+    - varsIgnorePattern: ^_
   no-unexpected-multiline: error # 混乱する複数行式を書かないでー！
   space-unary-ops: error # foo ++; <- みたいなのはやめてー！
   prefer-template: error # テンプレートリテラル使ってー！
@@ -56,12 +60,21 @@ rules:
   no-use-before-define: error # 宣言前に使わないでー！
   no-useless-escape: error # 不要なエスケープ使わないでー！
   dot-notation: error # プロパティはドット表記で取得してー！
-  dot-location: ["error", "property"] # 改行するならプロパティの前にドットを置いてー！
+  dot-location: # 改行するならプロパティの前にドットを置いてー！
+    - error
+    - property
   no-whitespace-before-property: error # プロパティ取得の . 前後にスペース入れないでー！
-  rest-spread-spacing: ["error", "never"] # スプレッド演算子と変数の間にスペースを入れないでー！
-  yoda: ["error", "never", { exceptRange: true }] # "red" === color とかやめてー！
+  rest-spread-spacing: # スプレッド演算子と変数の間にスペースを入れないでー！
+    - error
+    - never
+  yoda: # "red" === color とかやめてー！
+    - error
+    - never
+    - exceptRange: true
   no-extra-semi: error # 無駄なセミコロンを付けないでー！
-  brace-style: ["error", "1tbs"] # 改行は 1tbs スタイルにしてー！
+  brace-style: # 改行は 1tbs スタイルにしてー！
+    - error
+    - 1tbs
   comma-style: error # コンマは改行前に入れてー！
   semi-style: error # セミコロンを行頭に置かないでねー！
   nonblock-statement-body-position: error # 単一ステートメントは一行で！
@@ -83,22 +96,24 @@ rules:
   no-sequences: error # コンマ演算子を使わいでー！
   no-shadow: error # 外部スコープと同名の変数を作らないでー！
   default-param-last: error # デフォルト引数は最後にしよー！
-  space-before-function-paren: [
-      "error",
-      {
-        anonymous: "always", # Prettier
-        named: "never",
-        asyncArrow: "always",
-      },
-    ] # 関数の () の前にスペースを入れないでねー！
+  space-before-function-paren: # 関数の () の前にスペースを入れないでねー！
+    - error
+    - anonymous: always # Prettier
+      named: never
+      asyncArrow: always
   func-call-spacing: error # 関数呼び出しの () 前にスペース入れないでー！
   new-parens: error # コンストラクタには必ず () を付けてー！
-  new-cap: ["error", { properties: false }] # コンストラクタ名は大文字で始めてー！
+  new-cap: # コンストラクタ名は大文字で始めてー！
+    - error
+    - properties: false
   default-case-last: error # default case は最後に置いてねー！
 
   # 可読性に著しく影響を与えるほどではないけど
   no-tabs: warn # tab を使わないでー！
-  indent: ["warn", 2, { SwitchCase: 1 }] # インデントは 2 だよー！
+  indent: # インデントは 2 だよー！
+    - warn
+    - 2
+    - SwitchCase: 1
   quotes: warn # ダブル クオート使ってー！
   semi: warn # セミコロン入れてねー！
   no-multi-spaces: warn # 余計なスペース入れないでー！
@@ -110,35 +125,47 @@ rules:
   comma-spacing: warn # カンマの後にスペース入れてー！
   key-spacing: warn # コロン前後のスペース！
   no-trailing-spaces: warn # 末端にスペースがありますよー！
-  object-curly-spacing: ["warn", "always"] # {} の後にスペース入れてー！
+  object-curly-spacing: # {} の後にスペース入れてー！
+    - warn
+    - always
   space-before-blocks: warn # ブロックの前にスペースを入れてねー！
   switch-colon-spacing: warn # swich のコロン前後のスペース！
-  array-bracket-spacing: ["warn", "never"] # 配列内にスペースを入れないでー！
+  array-bracket-spacing: # 配列内にスペースを入れないでー！
+    - warn
+    - never
   no-duplicate-imports: warn # 同じモジュールからのインポートはまとめてー！
   no-lonely-if: warn # else 内に単体 if を書かないでー！
   consistent-return: warn # return あるなら値を返してー！
   radix: warn # parseInt() の基数は省略しないでー！
-  no-extra-parens: [
-      "warn",
-      "all",
-      { enforceForArrowConditionals: false, ignoreJSX: "all" },
-    ] # 不要な () ！
+  no-extra-parens: # 不要な () ！
+    - warn
+    - all
+    - enforceForArrowConditionals: false
+      ignoreJSX: all
   no-empty: warn # 空のブロック作らないでー！
   no-empty-function: warn # 空の function 作らないでー！
   prefer-const: warn # const に出来るよー！
   operator-assignment: warn # 出来るだけ演算子を省略してね！
-  operator-linebreak: ["warn", "after"] # オペレータの後で改行してね！
+  operator-linebreak: # オペレータの後で改行してね！
+    - warn
+    - after
   prefer-exponentiation-operator: warn # Math.pow の代わりに ** が使えるよ！
-  arrow-body-style: ["warn", "as-needed"] # 省略できるアロー関数は省略してー！
+  arrow-body-style: # 省略できるアロー関数は省略してー！
+    - warn
+    - as-needed
 
   # 待機 使いたいけど使えない
   #
   # TypeScript が未対応?
-  # "prefer-named-capture-group": warn // グループに名前付けてー！
+  # prefer-named-capture-group: warn # グループに名前付けてー！
   #
   # pritter と重複?
-  # "generator-star-spacing": ["warn"" "after"] // ジェネレータ関数 * の後ろにスペース入れてー！
-  # "yield-star-spacing": ["warn"" "after"] // yield* の後ろにスペース入れてー！
+  # generator-star-spacing: # ジェネレータ関数 * の後ろにスペース入れてー！
+  #   - warn
+  #   - after
+  # yield-star-spacing: # yield* の後ろにスペース入れてー！
+  #   - warn
+  #   - after
   # no-confusing-arrow: error # 比較と勘違いしそうな array function は括弧で囲ってね！
   #
   # no-loss-of-precision: error # Number の丸め込みで制度を失う

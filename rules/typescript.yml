@@ -3,13 +3,16 @@ overrides:
       - "*.ts"
       - "*.tsx"
     parser: "@typescript-eslint/parser"
-    plugins: ["@typescript-eslint"]
+    plugins:
+      - "@typescript-eslint"
     parserOptions:
       project: "./tsconfig.json"
 
 rules:
   "@typescript-eslint/adjacent-overload-signatures": error # メンバーのオーバーロードはグループ化してー！
-  "@typescript-eslint/array-type": [warn, { default: array-simple }] # 配列の型は場合に応じて使い分けてー！
+  "@typescript-eslint/array-type": # 配列の型は場合に応じて使い分けてー！
+    - warn
+    - default: array-simple
   # "@typescript-eslint/ban-ts-comment": warn # @ts コメントを抑制 allow-with-description 使えない?
   "@typescript-eslint/ban-types": warn # その型は使っちゃだめ ><
   "@typescript-eslint/member-delimiter-style": warn # 型定義メンバー区切り文字のスタイル
@@ -38,7 +41,9 @@ rules:
 
   # override
   brace-style": off
-  "@typescript-eslint/brace-style": [warn, 1tbs] # 改行は 1tbs スタイルにしてー！ 型定義のサポート？
+  "@typescript-eslint/brace-style": # 改行は 1tbs スタイルにしてー！ 型定義のサポート？
+    - warn
+    - 1tbs
   default-param-last: off
   "@typescript-eslint/default-param-last": warn # デフォルト引数は最後にしよー！ ?記法のサポート
 
