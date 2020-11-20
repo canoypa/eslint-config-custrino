@@ -1,12 +1,12 @@
+parser: "@typescript-eslint/parser"
+plugins:
+  - "@typescript-eslint"
+parserOptions:
+  project: "./tsconfig.json"
 overrides:
   - files:
       - "*.ts"
       - "*.tsx"
-    parser: "@typescript-eslint/parser"
-    plugins:
-      - "@typescript-eslint"
-    parserOptions:
-      project: "./tsconfig.json"
 
 rules:
   "@typescript-eslint/adjacent-overload-signatures": error # メンバーのオーバーロードはグループ化してー！
@@ -46,6 +46,7 @@ rules:
     - 1tbs
   default-param-last: off
   "@typescript-eslint/default-param-last": warn # デフォルト引数は最後にしよー！ ?記法のサポート
+
 
   # pass
   # comma-spacing 不要？
