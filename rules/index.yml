@@ -47,7 +47,7 @@ rules:
   no-delete-var: error # delete 使わないでー！
 
   # 著しく可読性を損なったり損なわなかったりするもの
-  no-unused-vars:
+  no-unused-vars: # 未使用の変数があるよー！
     - error
     - varsIgnorePattern: ^_
   no-unexpected-multiline: error # 混乱する複数行式を書かないでー！
