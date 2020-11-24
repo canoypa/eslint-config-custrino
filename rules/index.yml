@@ -149,7 +149,6 @@ rules:
   operator-assignment: warn # 出来るだけ演算子を省略してね！
   operator-linebreak: # オペレータの後で改行してね！
     - warn
-    - after
   prefer-exponentiation-operator: warn # Math.pow の代わりに ** が使えるよ！
   arrow-body-style: # 省略できるアロー関数は省略してー！
     - warn
