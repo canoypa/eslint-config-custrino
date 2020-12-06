@@ -46,12 +46,14 @@ rules:
     - 1tbs
   default-param-last: off
   "@typescript-eslint/default-param-last": warn # デフォルト引数は最後にしよー！ ?記法のサポート
-  no-unused-vars: off # 未使用の変数があるよ！ 型定義のサポート
-  "@typescript-eslint/no-unused-vars":
-    - error
-    - varsIgnorePattern: ^_
 
   # pass
+  # 問題あり
+  # no-unused-vars: off
+  # "@typescript-eslint/no-unused-vars":
+  #   - error
+  #   - varsIgnorePattern: ^_
+  #
   # comma-spacing 不要？
   # explicit-function-return-type 明示的な戻り値が必要
   # explicit-module-boundary-types 上の export のみ

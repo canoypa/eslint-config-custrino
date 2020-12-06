@@ -47,9 +47,6 @@ rules:
   no-delete-var: error # delete 使わないでー！
 
   # 著しく可読性を損なったり損なわなかったりするもの
-  no-unused-vars: # 未使用の変数があるよー！
-    - error
-    - varsIgnorePattern: ^_
   no-unreachable: error # 到達できないコードがあるよー！
   no-unexpected-multiline: error # 混乱する複数行式を書かないでー！
   space-unary-ops: error # foo ++; <- みたいなのはやめてー！
@@ -155,6 +152,11 @@ rules:
     - as-needed
 
   # 待機 使いたいけど使えない
+  #
+  # TypeScript Plugin に問題あり
+  # no-unused-vars: # 未使用の変数があるよー！
+  #  - error
+  #  - varsIgnorePattern: ^_
   #
   # TypeScript が未対応?
   # prefer-named-capture-group: warn # グループに名前付けてー！
