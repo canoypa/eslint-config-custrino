@@ -1,91 +1,93 @@
-parser: "@typescript-eslint/parser"
-plugins:
-  - "@typescript-eslint"
-parserOptions:
-  project: "./tsconfig.json"
 overrides:
   - files:
       - "*.ts"
       - "*.tsx"
 
-rules:
-  "@typescript-eslint/adjacent-overload-signatures": error # メンバーのオーバーロードはグループ化してー！
-  "@typescript-eslint/array-type": # 配列の型は場合に応じて使い分けてー！
-    - warn
-    - default: array-simple
-  # "@typescript-eslint/ban-ts-comment": warn # @ts コメントを抑制 allow-with-description 使えない?
-  "@typescript-eslint/ban-types": warn # その型は使っちゃだめ ><
-  "@typescript-eslint/member-delimiter-style": warn # 型定義メンバー区切り文字のスタイル
-  # "@typescript-eslint/no-invalid-void-type": warn # void の使い方がおかしいよー！ 使えない？
-  "@typescript-eslint/no-misused-new": warn # new, constructor を型定義しようとしないでー！
-  "@typescript-eslint/no-namespace": warn # namespace, module を使わないでー！
-  "@typescript-eslint/no-non-null-asserted-optional-chain": warn
-  "@typescript-eslint/no-non-null-assertion": warn # よくわかんないけどエラー！
-  "@typescript-eslint/no-require-imports": warn # require を使わないでー！
-  "@typescript-eslint/no-unnecessary-boolean-literal-compare": warn # boolean は比較しなくていいよー！
-  "@typescript-eslint/no-unnecessary-type-arguments": warn # その型引数もともとその型だよー！
-  "@typescript-eslint/no-unnecessary-type-assertion": warn # その型アサーションいらないよー！
-  "@typescript-eslint/no-explicit-any": warn
-  "@typescript-eslint/no-unsafe-assignment": warn
-  "@typescript-eslint/no-unsafe-return": warn # any!!!!
-  "@typescript-eslint/prefer-as-const": warn # const 使ってー！
-  "@typescript-eslint/prefer-optional-chain": warn # 省略
-  "@typescript-eslint/prefer-reduce-type-parameter": warn # reduce は呼び出し時に型定義
-  "@typescript-eslint/prefer-ts-expect-error": warn # @ts-expect-error を使ってー！
-  "@typescript-eslint/restrict-plus-operands": warn # 同じ型同士で + してー！
-  "@typescript-eslint/type-annotation-spacing": warn # type の周りにスペース！
+    parser: "@typescript-eslint/parser"
+    plugins:
+      - "@typescript-eslint"
+    parserOptions:
+      project: "./tsconfig.json"
 
-  "@typescript-eslint/no-this-alias": warn # this エイリアスを使わないでー！
-  "@typescript-eslint/prefer-for-of": warn # for of 使ってー！
-  "@typescript-eslint/prefer-includes": warn # includes 使ってー！
+    rules:
+      "@typescript-eslint/adjacent-overload-signatures": error # メンバーのオーバーロードはグループ化してー！
+      "@typescript-eslint/array-type": # 配列の型は場合に応じて使い分けてー！
+        - warn
+        - default: array-simple
+      # "@typescript-eslint/ban-ts-comment": warn # @ts コメントを抑制 allow-with-description 使えない?
+      "@typescript-eslint/ban-types": warn # その型は使っちゃだめ ><
+      "@typescript-eslint/member-delimiter-style": warn # 型定義メンバー区切り文字のスタイル
+      # "@typescript-eslint/no-invalid-void-type": warn # void の使い方がおかしいよー！ 使えない？
+      "@typescript-eslint/no-misused-new": warn # new, constructor を型定義しようとしないでー！
+      "@typescript-eslint/no-namespace": warn # namespace, module を使わないでー！
+      "@typescript-eslint/no-non-null-asserted-optional-chain": warn
+      "@typescript-eslint/no-non-null-assertion": warn # よくわかんないけどエラー！
+      "@typescript-eslint/no-require-imports": warn # require を使わないでー！
+      "@typescript-eslint/no-unnecessary-boolean-literal-compare": warn # boolean は比較しなくていいよー！
+      "@typescript-eslint/no-unnecessary-type-arguments": warn # その型引数もともとその型だよー！
+      "@typescript-eslint/no-unnecessary-type-assertion": warn # その型アサーションいらないよー！
+      "@typescript-eslint/no-explicit-any": warn
+      "@typescript-eslint/no-unsafe-assignment": warn
+      "@typescript-eslint/no-unsafe-return": warn # any!!!!
+      "@typescript-eslint/prefer-as-const": warn # const 使ってー！
+      "@typescript-eslint/prefer-optional-chain": warn # 省略
+      "@typescript-eslint/prefer-reduce-type-parameter": warn # reduce は呼び出し時に型定義
+      "@typescript-eslint/prefer-ts-expect-error": warn # @ts-expect-error を使ってー！
+      "@typescript-eslint/restrict-plus-operands": warn # 同じ型同士で + してー！
+      "@typescript-eslint/type-annotation-spacing": warn # type の周りにスペース！
 
-  # override
-  brace-style": off
-  "@typescript-eslint/brace-style": # 改行は 1tbs スタイルにしてー！ 型定義のサポート？
-    - warn
-    - 1tbs
-  default-param-last: off
-  "@typescript-eslint/default-param-last": warn # デフォルト引数は最後にしよー！ ?記法のサポート
+      "@typescript-eslint/no-this-alias": warn # this エイリアスを使わないでー！
+      "@typescript-eslint/prefer-for-of": warn # for of 使ってー！
+      "@typescript-eslint/prefer-includes": warn # includes 使ってー！
 
-  # pass
-  # 問題あり
-  # no-unused-vars: off
-  # "@typescript-eslint/no-unused-vars":
-  #   - error
-  #   - varsIgnorePattern: ^_
-  #
-  # comma-spacing 不要？
-  # explicit-function-return-type 明示的な戻り値が必要
-  # explicit-module-boundary-types 上の export のみ
-  # explicit-member-accessibility クラスメソッドに明示的なアクセス修飾子が必要
-  # func-call-spacing 不要なはず 関数()前のスペース 関数ジェネリックのサポート
-  # method-signature-style 関数定義のスタイルを強制
-  # no-empty-function
-  # no-empty-interface
-  # no-extra-non-null-assertion
-  # no-extra-parens
-  # no-extra-semi
-  # no-extraneous-class
-  # no-for-in-array
-  # no-loss-of-precision
-  # no-useless-constructor
-  # prefer-nullish-coalescing
-  #
-  # class-literal-property-style
-  # consistent-type-assertions
-  # indent
-  # init-declarations
-  # keyword-spacing
-  # no-unused-vars-experimental
-  # no-use-before-define
-  # no-unused-expressions
-  #
-  # member-ordering
-  # naming-convention
-  # no-floating-promises
-  # no-confusing-non-null-assertion
-  # no-unsafe-member-access
-  # prefer-function-type
-  # prefer-readonly
-  # quotes
-  # require-await
+      # override
+      brace-style": off
+      "@typescript-eslint/brace-style": # 改行は 1tbs スタイルにしてー！ 型定義のサポート？
+        - warn
+        - 1tbs
+      default-param-last: off
+      "@typescript-eslint/default-param-last": warn # デフォルト引数は最後にしよー！ ?記法のサポート
+
+
+      # pass
+      # 問題あり
+      # no-unused-vars: off
+      # "@typescript-eslint/no-unused-vars":
+      #   - error
+      #   - varsIgnorePattern: ^_
+      #
+      # comma-spacing 不要？
+      # explicit-function-return-type 明示的な戻り値が必要
+      # explicit-module-boundary-types 上の export のみ
+      # explicit-member-accessibility クラスメソッドに明示的なアクセス修飾子が必要
+      # func-call-spacing 不要なはず 関数()前のスペース 関数ジェネリックのサポート
+      # method-signature-style 関数定義のスタイルを強制
+      # no-empty-function
+      # no-empty-interface
+      # no-extra-non-null-assertion
+      # no-extra-parens
+      # no-extra-semi
+      # no-extraneous-class
+      # no-for-in-array
+      # no-loss-of-precision
+      # no-useless-constructor
+      # prefer-nullish-coalescing
+      #
+      # class-literal-property-style
+      # consistent-type-assertions
+      # indent
+      # init-declarations
+      # keyword-spacing
+      # no-unused-vars-experimental
+      # no-use-before-define
+      # no-unused-expressions
+      #
+      # member-ordering
+      # naming-convention
+      # no-floating-promises
+      # no-confusing-non-null-assertion
+      # no-unsafe-member-access
+      # prefer-function-type
+      # prefer-readonly
+      # quotes
+      # require-await
