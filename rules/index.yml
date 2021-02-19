@@ -114,6 +114,7 @@ rules:
     - SwitchCase: 1
   quotes: # ダブル クオート使ってー！
     - warn
+    - double
     - avoidEscape: true
   semi: warn # セミコロン入れてねー！
   no-multi-spaces: warn # 余計なスペース入れないでー！
