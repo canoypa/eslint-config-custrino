@@ -147,9 +147,7 @@ rules:
   operator-linebreak: # オペレータの後で改行してね！
     - warn
   prefer-exponentiation-operator: warn # Math.pow の代わりに ** が使えるよ！
-  arrow-body-style: # 省略できるアロー関数は省略してー！
-    - warn
-    - as-needed
+
 
   # 待機 使いたいけど使えない
   #
